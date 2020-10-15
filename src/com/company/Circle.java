@@ -16,7 +16,7 @@ public abstract class Circle {
     }
 
     Circle(double radius){
-        radius = Radius;
+        this.radius = radius;
     }
 
     public String toString(){
