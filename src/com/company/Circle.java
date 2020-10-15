@@ -15,6 +15,13 @@ public abstract class Circle {
         this.radius = radius;
     }
 
+    Circle(double radius){
+        radius = Radius;
+    }
+
+    public String toString(){
+        return "I`m Circle";
+    }
 
     public double areaCalculation() {
         double s;
