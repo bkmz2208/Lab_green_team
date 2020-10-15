@@ -47,6 +47,19 @@ public abstract class Triangle {
         this.y3 = y3;
     }
 
+    Triangle(int X1, int Y1, int X2, int Y2, int X3, int Y3){
+        x1 = X1;
+        y1 = Y1;
+        x2 = X2;
+        y2 = Y2;
+        x3 = X3;
+        y3 = Y3;
+    }
+
+    public String toString(){
+        return "I`m Triangle";
+    }
+
     public float areaCalculation() throws Exception {
         //verification: 3 points on the same line?
         if( (x1-x2)*(y3-y2) == (x3-x2)*(y1-y2) ){
