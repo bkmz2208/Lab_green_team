@@ -47,7 +47,7 @@ public abstract class Triangle {
         this.y3 = y3;
     }
 
-    public int areaCalculation() throws Exception {
+    public float areaCalculation() throws Exception {
         //verification: 3 points on the same line?
         if( (x1-x2)*(y3-y2) == (x3-x2)*(y1-y2) ){
             System.out.println("Triangle doesn`t exist! Points lie on the same line. ");
@@ -57,7 +57,7 @@ public abstract class Triangle {
             System.out.println("Verification was successful. The triangle exist. ");
         }
         //calculation
-        int s;
+        float s;
         s = 1/2 * ( (x1-x3)*(y2-y3) - (y1-y3)*(x2-x3) );
         return s;
     }
