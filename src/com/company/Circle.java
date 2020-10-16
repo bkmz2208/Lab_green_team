@@ -16,17 +16,13 @@ public abstract class Circle {
     }
 
     Circle(double radius){
-        radius = Radius;
+        this.radius = radius;
     }
 
     public String toString(){
         return "I`m Circle";
     }
 
-    public double areaCalculation() {
-        double s;
-        s = Math.PI * (radius * radius);
-        return s;
-    }
+    public abstract double areaCalculation();
 
 }
