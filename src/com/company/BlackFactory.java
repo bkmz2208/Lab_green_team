@@ -19,8 +19,4 @@ public class BlackFactory extends BaseFactory { // WhiteFactory from BaseFactory
         return "BlackFactory";
     }
 
-    @Override
-    public BaseFactory getFactory() {
-        return this;
-    }
 }
