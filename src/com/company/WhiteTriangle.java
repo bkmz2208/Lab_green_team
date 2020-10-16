@@ -8,7 +8,19 @@ public class WhiteTriangle extends Triangle {
 
     @Override
     public float areaCalculation() throws Exception {
-        return super.areaCalculation();
+        //verification: 3 points on the same line?
+        if( (super.getX1()-super.getX2())*(super.getY3()-super.getY2()) == (super.getX3()-super.getX2())*(super.getY1()-super.getY2()) ){
+            System.out.println("Triangle doesn`t exist! Points lie on the same line. ");
+            throw new Exception();
+        }
+        else{
+            System.out.println("Verification was successful. The triangle exist. ");
+        }
+        //calculation
+        float s;
+        s = 1/2 * ( (super.getX1()-super.getX3())*(super.getY2()-super.getY3()) -
+                (super.getY1()-super.getY3())*(super.getX2()-super.getX3()) );
+        return s;
     }
 
     @Override

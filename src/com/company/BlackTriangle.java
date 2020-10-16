@@ -9,7 +9,7 @@ public class BlackTriangle extends Triangle {
     @Override
     public float areaCalculation() throws Exception {
         //verification: 3 points on the same line?
-        if( (x1-x2)*(y3-y2) == (x3-x2)*(y1-y2) ){
+        if( (super.getX1()-super.getX2())*(super.getY3()-super.getY2()) == (super.getX3()-super.getX2())*(super.getY1()-super.getY2()) ){
             System.out.println("Triangle doesn`t exist! Points lie on the same line. ");
             throw new Exception();
         }
@@ -18,7 +18,7 @@ public class BlackTriangle extends Triangle {
         }
         //calculation
         float s;
-        s = 1/2 * ( (x1-x3)*(y2-y3) - (y1-y3)*(x2-x3) );
+        s = 1/2 * ( (super.getX1()-super.getX3())*(super.getY2()-super.getY3()) - (super.getY1()-super.getY3())*(super.getX2()-super.getX3()) );
         return s;
     }
 
