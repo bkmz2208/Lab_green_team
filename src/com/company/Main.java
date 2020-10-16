@@ -14,6 +14,7 @@ public class Main {
         whiteTriangleCreation(whiteFactory, 1,2,0,0,2,-1);
         System.out.println();
         blackTriangleCreation(blackFactory, 2,1,0,0,-1,-2);
+        blackTriangleCreation(blackFactory, 1,0,0,0,0,1);
 
     }
 

@@ -60,7 +60,7 @@ public abstract class Triangle {
         return "I`m Triangle";
     }
 
-    public abstract float areaCalculation() throws Exception;
+    public abstract double areaCalculation() throws Exception;
 
     }
 

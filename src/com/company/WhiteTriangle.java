@@ -1,5 +1,7 @@
 package com.company;
 
+import static java.lang.Math.abs;
+
 public class WhiteTriangle extends Triangle {
 
     public WhiteTriangle(int x1, int y1, int x2, int y2, int x3, int y3) {
@@ -7,7 +9,7 @@ public class WhiteTriangle extends Triangle {
     }
 
     @Override
-    public float areaCalculation() throws Exception {
+    public double areaCalculation() throws Exception {
         //verification: 3 points on the same line?
         if( (super.getX1()-super.getX2())*(super.getY3()-super.getY2()) == (super.getX3()-super.getX2())*(super.getY1()-super.getY2()) ){
             System.out.println("Triangle doesn`t exist! Points lie on the same line. ");
@@ -17,9 +19,9 @@ public class WhiteTriangle extends Triangle {
             System.out.println("Verification was successful. The triangle exist. ");
         }
         //calculation
-        float s;
-        s = 1/2 * ( (super.getX1()-super.getX3())*(super.getY2()-super.getY3()) -
-                (super.getY1()-super.getY3())*(super.getX2()-super.getX3()) );
+        double s;
+        s = abs(0.5 * (double) ( (super.getX1()-super.getX3())*(super.getY2()-super.getY3()) -
+                (super.getY1()-super.getY3())*(super.getX2()-super.getX3()) ));
         return s;
     }
 
