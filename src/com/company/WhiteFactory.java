@@ -2,7 +2,7 @@ package com.company;
 
 public class WhiteFactory extends BaseFactory {  // WhiteFactory from BaseFactory
     @Override    // WhiteCircle (radius)
-    WhiteCircle createCircle(double radius) {
+    WhiteCircle createCircle(int radius) {
         return new WhiteCircle(radius);
     }
 
