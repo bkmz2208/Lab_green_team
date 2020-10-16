@@ -1,6 +1,6 @@
 package com.company;
 
-public class AbstractFactory {
+public interface AbstractFactory {
     public static BaseFactory getFactory(String string) {
         if (string.equalsIgnoreCase("white"))
             return new WhiteFactory();
