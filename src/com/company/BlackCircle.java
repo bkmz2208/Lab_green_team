@@ -1,6 +1,6 @@
 package com.company;
 
- public class BlackCircle extends Circle {
+public class BlackCircle extends Circle {
     public BlackCircle(int radius) {
         super(radius);
     }
@@ -9,9 +9,9 @@ package com.company;
     public String toString() {
         return "BlackCircle";
     }
-    
+
     @Override
-    public double areaOfCircle() {
-        return  Math.PI* Math.pow(radius,2);
+    public double areaCalculation() {
+        return  Math.PI* Math.pow(super.getRadius(),2);
     }
 }
