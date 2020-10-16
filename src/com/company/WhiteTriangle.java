@@ -18,7 +18,8 @@ public class WhiteTriangle extends Triangle {
         }
         //calculation
         float s;
-        s = 1/2 * ( (super.getX1()-super.getX3())*(super.getY2()-super.getY3()) - (super.getY1()-super.getY3())*(super.getX2()-super.getX3()) );
+        s = 1/2 * ( (super.getX1()-super.getX3())*(super.getY2()-super.getY3()) -
+                (super.getY1()-super.getY3())*(super.getX2()-super.getX3()) );
         return s;
     }
 
