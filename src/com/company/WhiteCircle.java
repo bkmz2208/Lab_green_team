@@ -5,11 +5,12 @@ public class WhiteCircle extends Circle {
         super(radius);
     }
     @Override
-    public String ToSting(){
+    public String toString(){
         return "WhiteCircle";
     }
     @Override
-    public double areaOfCircle(){
-        return Math.PI*Math.pow(radius,2);
+    public double areaCalculation(){
+        return Math.PI*Math.pow(super.getRadius(),2);
     }
 }
+
