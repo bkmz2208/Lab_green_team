@@ -1,6 +1,6 @@
 package com.company;
 
-public class BlackCircle extends Circle {
+public class BlackCircle extends Circle implements AbstractFactory{
     public BlackCircle(int radius) {
         super(radius);
     }
