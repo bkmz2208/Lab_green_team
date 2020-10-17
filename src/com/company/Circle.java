@@ -5,17 +5,17 @@ package com.company;
 
 public abstract class Circle {
 
-    private double radius;
+    private int radius;
 
-    public double getRadius() {
+    public int getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(int radius) {
         this.radius = radius;
     }
 
-    Circle(double radius){
+    Circle(int radius){
         this.radius = radius;
     }
 
